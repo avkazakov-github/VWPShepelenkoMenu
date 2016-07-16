@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <!--Command="EmailLink"-->
+    <CustomAction Id="75dd24d9-0c16-4ef5-be0a-f52ed0e620fa.CustomAction"
+                RegistrationType="List"
+                RegistrationId="101"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="Ю.А. Шепеленко">
+        <CommandUIExtension>
+            <CommandUIDefinitions>
+                <CommandUIDefinition Location="Ribbon.Documents.Manage.Controls._children">
+                    <Button
+                        Id="Ribbon.Documents.Share.EmailIDLink"
+                        Alt="Для Ю.А. Шепеленко"
+                        Sequence="119"
+                        Command="Ribbon.Documents.Share.EmailIDLink"
+                        LabelText="Отправить ссылку"
+                        TemplateAlias="o1"
+                        Image32by32Left="-511" Image32by32Top="-137"
+                        Image32by32="/_layouts/15/1049/images/formatmap32x32.png?rev=23"
+                        Image16by16Left="-511" Image16by16Top="-137"
+                        ToolTipTitle="$Resources:core,cui_ButEmailLink;"
+                        ToolTipDescription="$Resources:core,cui_STT_ButEmailLinkDocument;"
+                        LabelCss="font-weight:bold" 
+                        Image16by16="/_layouts/15/1049/images/formatmap16x16.png" />
+                </CommandUIDefinition>
+            </CommandUIDefinitions>
+            <CommandUIHandlers>
+                <CommandUIHandler
+                   Command="Ribbon.Documents.Share.EmailIDLink"
+                   CommandAction="javascript:EmailIDLink('{SiteUrl}','{ListUrlDir}','{SelectedItemId}');"
+                   EnabledScript="javascript:EnableEmailIDLink();" />
+            </CommandUIHandlers>
+        </CommandUIExtension>
+    </CustomAction>
+    <CustomAction
+       Id="Ribbon.Documents.Share.EmailIDLink.Script" 
+       Location="ScriptLink"
+       ScriptSrc="~site/_layouts/15/webservice_001/MyContent001/JS/ShepelenkoM.js"/>
+</Elements>

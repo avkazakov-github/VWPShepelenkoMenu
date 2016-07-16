@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="cc256fbe-afb0-472e-bba9-7607c9237761" solutionId="cc256fbe-afb0-472e-bba9-7607c9237761" resetWebServer="false" sharePointProductVersion="15.0" name="VWPShepelenkoMenu" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="37a7ac25-97e2-4fba-8fb2-855d3e2288df" />
+  </features>
+</package>
